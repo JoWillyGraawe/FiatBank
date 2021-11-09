@@ -470,3 +470,29 @@ ul{
     bottom: 0;
     line-height: 1.5;
   }
+
+/* 
+================
+   savings.html
+================
+*/
+.savings_account,
+   .index_fund,
+   .active_fund {
+    padding: 4em;
+   }
+
+form {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: var(--clr-bg-box);
+    padding: 4em;
+    font-family: 'roboto',sans-serif;
+    font-weight: bold;
+    }
+
+div>input {
+    margin-left: 35%;
+    margin-right: 55%;
+}
+
