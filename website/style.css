@@ -502,3 +502,20 @@ div>input {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5em;  
     }
+
+/* 
+================
+   savings.html
+================
+*/
+ .insurance__grid {
+    margin: 61px 72px 37px 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10em;
+    }
+
+.home_insurance,
+   .travel_insurance {
+    padding: 4em;
+   }
