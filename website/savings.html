@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Savings</title>
+</head>
+<body>
+ <header>
+  <div class="something">
+   <h1 class="title">FiatBank</h1>
+  </div>
+  <nav class="nav">
+   <ul>
+    <li><a href="#" class="nav__link">Home</a></li>
+    <li><a href="#" class="nav__link">Services</a></li>
+    <li><a href="#" class="nav__link">About us</a></li>
+    <li><a href="#" class="nav__link">Contact</a></li>
+   </ul>
+  </nav>
+ </header>
+ <main>
+  <div class="savings__grid">
+   
+   <div class="savings_account boxes">    
+    <h2 class="sub-title">Savings Account</h2>
+    <p class="text">
+        For our customers interested in a no-risk service for their savings, our bank offers a savings account with security up towards 2 million NOK. We will provide a competitive interest and will long-term be expected to average at 2% a year.
+    </p>
+   </div>
+   <div class="index_fund boxes">
+    <h2 class="sub-title">Index Based Fund</h2>
+    <p class="text">
+        For our customers interested in interest on their savings and willing to take a higher risk. Historically performs at average 8% interest anually with a marked-based risk.
+    </p>
+   </div>
+   <div class="active_fund boxes">
+    <h2 class="sub-title">Active Managed Fund</h2>
+    <p class="text">
+        Our service for the customer who is interested in the highest possible return on their investment. A fund managed by our best analytics and has performed at average 15% the last 10 years.
+    </p>
+   </div>
+  </div>
+  <form method="post">
 
+    <div>
+      <label for="Initial" >Initial Investment</label>
+      <input type="number" name="initial" id="Initial" min="0" onchange="fvCalculation()" required>
+    </div>
+
+    <div>
+      <label for="Interest" >Interest in Percentage</label>
+      <input type="number" name="interest" id="Interest" min="0" max="20" onchange="fvCalculation()" required>
+    </div>
+
+    <div>
+      <label for="Time" >Years Invested</label>
+      <input type="number" name="time" id="Time" min="0" max="30" onchange="fvCalculation()" required>
+    </div>
+
+    <div>
+      <label for="FV">Future Value</label>
+      <input type="number" name="Future Value" id="FV" readonly>
+    </div>
+  </form>
+  <input type="checkbox" name="chatbot">
+ </main>
+ <footer class="footer"></footer>
+ <script src="savings.js"></script>
+</body>
+</html>
