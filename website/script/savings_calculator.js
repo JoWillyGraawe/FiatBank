@@ -1,4 +1,4 @@
-function savingsCalculation(){
+function savings_calculator(){
     let initialValue = document.getElementById("Initial").value;
     let interestValue = document.getElementById("Interest").value;
     let timeValue = document.getElementById("Time").value;
