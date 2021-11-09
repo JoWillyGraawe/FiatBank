@@ -496,3 +496,9 @@ div>input {
     margin-right: 55%;
 }
 
+  .savings__grid {
+        margin: 61px 72px 37px 72px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5em;  
+    }
