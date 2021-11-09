@@ -46,17 +46,17 @@
 
     <div>
       <label for="Initial" >Initial Investment</label>
-      <input type="number" name="initial" id="Initial" min="0" onchange="fvCalculation()" required>
+      <input type="number" name="initial" id="Initial" min="0" onchange="savings_calculator()" required>
     </div>
 
     <div>
       <label for="Interest" >Interest in Percentage</label>
-      <input type="number" name="interest" id="Interest" min="0" max="20" onchange="fvCalculation()" required>
+      <input type="number" name="interest" id="Interest" min="0" max="20" onchange="savings_calculator()" required>
     </div>
 
     <div>
       <label for="Time" >Years Invested</label>
-      <input type="number" name="time" id="Time" min="0" max="30" onchange="fvCalculation()" required>
+      <input type="number" name="time" id="Time" min="0" max="30" onchange="savings_calculator()" required>
     </div>
 
     <div>
@@ -67,6 +67,6 @@
   <input type="checkbox" name="chatbot">
  </main>
  <footer class="footer"></footer>
- <script src="savings.js"></script>
+ <script src="savings_calculator.js"></script>
 </body>
 </html>
