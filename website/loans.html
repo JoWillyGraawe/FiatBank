@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="loan-h1">Loans</h1>
+    <img src="mortgage.jpg" id="img_mort" >
+    <div id="loan-box1">
+        <p>SOMETHING</p>
+    </div>
 
+<div id="loan-info">
+    <div id="mortgage" >
+        <h2>Mortgage</h2>
+        <p class="loan_info_txt">
+            We adapt the mortgage to you and your situation. Whether you are looking for the best interest rate on the market or a predictable repayment schedule. Apply for proof of financing today and you are ready to chase your dream home!
+        </p>
+        <img src="house.svg" id="img_house">
+        <div class="info2">
+        <ul>
+            <li>Nominal rates from 1.29 - 1.99%</li>
+            <li>Maturity between 10- and 30-years</li>
+            <li>Fixed interest rate from 2.50%</li>
+            <li>Borrow the entire real estate with extra security</li>
+        </ul>
+        </div>
+
+
+
+
+    </div>
+
+    <div id="car_loan" >
+        <h2>Car loan</h2>
+        <p class="info_txt">
+            Do you have plans to buy a car? With car-loan from Fiat Bank, you can buy the car you want, and borrow up to 100% of the purchase price. Apply today and you will have the financing certificate in order when the dream car appears.
+        </p>
+        <img src="car.svg" id="img_car">
+        <div class="info2">
+        <ul>
+            <li>Nominal rate from 3.10%</li>
+            <li>Loans up to 100% of the car's value</li>
+            <li>Quick and easy process</li>
+            <li>Best rate at 35% equity</li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="credit" >
+        <h2>Credit cards</h2>
+        <p class="loan_info_txt">
+            Borrow up to NOK 600,000 for whatever you want! Are you planning some new projects, or do you want to refinance expensive small loans or credit card debt? Apply for a credit card at Fiat bank and we will help you relize your dreams.
+        </p>
+        <img src="credit card.svg" id="img_card">
+        <div class="info2">
+        <ul>
+            <li>Interest rate from 6.99 - 17.99%</li>
+            <li>Loans from NOK 5000 - 600.000</li>
+        </ul>
+        <p class="loan_info_txt"> 
+            To get a unsecured loan, you have to:
+        </p>
+        <ul>
+            <li>Have a registered income</li>
+            <li>Do not have active debt collection cases</li>
+            <li>Be older than 23 year</li>
+        </ul>
+        </div>
+
+
+    </div>
+    
+</div>
+<h2 id="borrow">How much can I borrow?</h2>
+    <div id="loan_calc">
+        <div id="in">
+            Annual income before tax: <br>
+            <input type="number" id="income" placeholder="Enter income">
+        </div>
+        <div id="eq">
+            Equity: <br>
+            <input type="number" id="equity" placeholder="Enter equity">
+        </div>
+        <button type="btn" id="btn">Calculate</button>
+        <div id="loan">
+            Total amount of loan: <br>
+            <input type="number" id="total" disabled placeholder="Your total loan">
+        </div>
+    </div>
+    <div id="something"> 
+        <p>SOMETHING</p>
+
+    </div>
+        
+    
+
+
+
+<script src="loan_calculator.js"></script>
+</body>
+</html>
