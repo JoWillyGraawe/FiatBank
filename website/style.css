@@ -88,7 +88,6 @@ typografi styles
 ================
 */
 
-/* Placeholder for logo */
 
 .title {
  font-family: 'roboto',sans-serif;
@@ -136,9 +135,17 @@ typografi styles
  position: relative;
 }
 
+.logo img {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 3em;
+  height: 3em;
+}
+
 .title {
  position: absolute;
- left: 73px;
+ left: 93px;
  top: 28px;
 }
 

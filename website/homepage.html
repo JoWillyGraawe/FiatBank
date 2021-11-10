@@ -9,6 +9,9 @@
 <body>
  <header>
   <div class="something">
+   <div class="logo">
+      <img src="/website/img/FiatBank-icon.svg" alt="FiatBank logo">
+   </div>
    <h1 class="title">FiatBank</h1>
   </div>
   <nav class="nav">
@@ -25,9 +28,10 @@
    <div class="box_1 boxes"><img src="" alt="Something"></div>
    <div class="box_2 boxes">
     <h2 class="sub-title">News</h2>
-    <p class="text">
-     Proin vulputate, dolor ut scelerisque imperdiet, diam urna vulputate felis, at mattis lectus erat nec purus. Duis scelerisque nisi lacinia, efficitur sapien vel, eleifend nisi. Maecenas sagittis vel enim ut aliquet. Donec posuere aliquam elit, a lobortis lorem scelerisque nec. Curabitur vitae felis vulputate, maximus libero ut, fringilla metus. Nullam laoreet a metus vel aliquet. 
-    </p>
+    <div class="text" id="feed_container">
+       <div id="feed_title"></div>
+       <div id="feed_item">Loading...</div>
+    </div>
     <a href="#">Read more here</a>
    </div>
    <div class="box_3 boxes">
@@ -44,5 +48,6 @@ isus. Nunc fringilla accumsan sem, in finibus dui pretium eget. Proin nec volutp
   <input type="checkbox" name="chatbot">
  </main>
  <footer class="footer"></footer>
+ <script src="/website/script/news_feed.js"></script>
 </body>
 </html>
