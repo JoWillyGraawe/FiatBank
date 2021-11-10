@@ -1,0 +1,422 @@
+/*
+  =============
+   custom font
+  =============
+*/
+
+@font-face {
+ font-family: 'roboto';
+ src: url('./assets/fonts/Roboto-Regular-webfont.woff') format('woff'),
+      url('./assets/fonts/Roboto-Regular-webfont.svg') format('svg');
+ font-weight: normal;
+ font-style: normal;
+
+}
+
+@font-face {
+ font-family: 'roboto';
+ src: url('./assets/fonts/Roboto-Light-webfont.woff') format('woff'),
+      url('./assets/fonts/Roboto-Light-webfont.svg') format('svg');
+ font-weight: 300;
+ font-style: normal;
+
+}
+
+@font-face{
+ font-family: 'roboto';
+ src:  url('./assets/fonts/Roboto-Bold-webfont.woff') format('woff'),
+       url('./assets/fonts/Roboto-Bold-webfont.svg') format('svg');
+
+ font-weight: bold;
+ font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'roboto';
+  src: url('./assets/fonts/Roboto-BoldItalic-webfont.woff') format('woff2'),
+       url('./assets/fonts/Roboto-BoldItalic-webfont.svg') format('svg');
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+/*
+  ===============
+   global styles
+  ===============
+*/
+
+:root {
+ /* backgroud colours */
+ --clr-bg-header:rgb(3,37,108);
+ --clr-bg-primary:rgb(37,65,178);
+ --clr-bg-box:rgb(249,249,249);
+ --clr-bg-buttons:rgb(6,190,225);
+
+ /* typographi colours */
+ --clr-tp-nav:rgb(255,255,255);
+ --clr-tp-box:rgb(0,0,0);
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+}
+/*logo styles*/
+.logo {
+ background: var(--clr-bg-header);
+ height: 126px;
+}
+
+.title {
+ position: absolute;
+ top: 28px;
+ left: 74px;
+}
+
+/*nav styles*/
+
+.nav ul{
+ background-color: var(--clr-bg-primary);
+ list-style: none;
+ display: flex;
+ padding: 3px 0;
+}
+
+.nav__link {
+ padding: 4px 100px;
+}
+
+.nav__link:hover {
+  background-color:var(--clr-bg-buttons);
+}
+
+.footer {
+ margin-top: auto;
+ background: var(--clr-bg-primary);
+ padding: 12px;
+}
+
+/*Nav dropdown style*/
+
+.pre_dropdown {
+  position: relative;
+}
+.dropdown {
+  background-color: var(--clr-bg-primary);
+  display: none;
+  min-width:100%;
+  position: absolute;
+  top: 21.49px;
+  left: 0;
+}
+
+.dropdown a {
+  min-width:100%;
+  padding: 4px 10px;
+}
+
+.dropdown a:hover {
+  background-color:var(--clr-bg-buttons);
+}
+
+.pre_dropdown:hover .dropdown{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Chatbot Style*/
+
+.chatbot {
+  position: fixed;
+  bottom: 130px;
+  right: 0;
+}
+
+/*Chat style when not clicked*/
+
+.chat_unclicked {
+  width: 91px;
+  height: 59px;
+  border-radius: 53px 0px 0px 53px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+  display: none;
+}
+
+.chat_unclicked:hover {
+  width: 100px;
+
+}
+
+.chat_unclicked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:-17px;
+  margin-left: -21px;
+
+  width: 43px;
+  height: 34px;
+  border-radius: 50%;
+
+  background-color: var(--clr-bg-buttons);
+}
+
+.chat_unclicked::before {
+  content: '';
+  position: absolute;
+  top: 57%;
+  left: 60%;
+
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-bottom: 10px solid var(--clr-bg-buttons);;
+}
+
+/*Chat style when clicked*/
+
+.chat_clicked {
+  flex-direction: column;
+  box-shadow: 2px -2px 5px 0 rgb(0 0 0 / 25%);
+  width: 300px;
+  height: 400px;
+  background: white ;
+}
+
+.chat_clicked::before {
+
+}
+
+.top_chat{
+  display: inline-flex;
+  width: 100%;
+  color: var(--clr-bg-primary);
+  border-bottom: 2px var(--clr-bg-primary) solid;
+  position: relative;
+}
+
+.bxs-message-rounded {
+  padding: 4px 4px 1.5px 4px;
+  color: white;
+  background-color: var(--clr-bg-primary);
+
+}
+
+.top_text {
+  display: flex;
+  margin-left: 5px;
+  padding: 4px 4px 0 4px;
+}
+
+.top_text i{
+  position: absolute;
+  top:4px;
+  right: 4px;
+  cursor: pointer;
+}
+.chat_cnt {
+  height:80%;
+}
+.chat_inp {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 12%;
+}
+
+.chat_inp textarea {
+  outline: none;
+  resize: none;
+}
+
+.send {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 2px -2px 5px 0 rgb(0 0 0 / 25%);
+  margin-top: auto;
+  color: var(--clr-bg-primary);
+  cursor: pointer;
+}
+
+
+/*Background color on common boxes*/
+
+.boxes {
+  background: var(--clr-bg-box);
+}
+
+/*
+================
+typografi styles
+================
+*/
+
+/* Placeholder for logo */
+
+.title {
+ font-family: 'roboto',sans-serif;
+ font-weight: bold;
+ font-style: normal;
+ font-size: 3em;
+ color: var(--clr-tp-nav);
+}
+
+/* Navigation bar */
+
+.nav__text {
+ font-family: 'roboto',sans-serif;
+ font-weight: 300;
+ font-style: normal;
+ color: var(--clr-tp-nav);
+ text-decoration: none;
+}
+
+
+/* Sub titles and Content text */
+.sub-title {
+ font-family: 'roboto',sans-serif;
+ font-weight: normal;
+ font-style: normal;
+ font-size: 32px;
+
+}
+
+.text {
+ font-family: 'roboto',sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 18px;
+}
+
+/*
+  ===============
+   homepage.html
+  ===============
+*/
+
+
+.h_main__grid {
+ margin-top:60px;
+ display: grid;
+ grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 5%;
+ gap: 40px;
+}
+
+.h_box_1 {
+ grid-column: 2/7;
+ height: 300px;
+}
+
+.h_box_2 {
+ grid-column: 2/4;
+}
+
+.h_box_3 {
+ grid-column:5/7;
+}
+
+/*
+  ==============
+   service.html
+  ==============
+*/
+
+.s_main__grid {
+ display: grid;
+ grid-template-columns: 5% 1fr 5%;
+ gap:50px;
+ margin-top:60px;
+}
+
+.s_service {
+  grid-column: 2/3;
+}
+
+.s_mininav {
+ grid-column: 2/3;
+}
+
+/*Circle nav bar with icons*/
+
+.s_mininav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 40px 5%;
+}
+
+.circle {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s_currency {
+ grid-column: 2/3;
+
+}
+
+/*
+  ============
+   about.html
+  ============
+*/
+
+.a_main__grid {
+ margin-top:60px;
+ display: grid;
+ grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 5%;
+ gap:50px;
+}
+
+.a_content {
+ grid-column: 2/5;
+}
+
+.a_card {
+ grid-column: 5/7;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.a_card ul {
+ list-style-type: none;
+}
+
+/*
+  ==============
+   contact.html
+  ==============
+*/
+
+.c_main__grid {
+ margin-top:60px;
+ display: grid;
+ grid-template-columns: 5% 1fr 1fr 1fr 5%;
+ gap:50px;
+}
+
+.c_content {
+ grid-column: 2/5;
+}
