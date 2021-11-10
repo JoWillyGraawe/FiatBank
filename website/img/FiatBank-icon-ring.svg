@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="FiatBank-icon-ring.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1997092"
+     inkscape:cx="413.00914"
+     inkscape:cy="512.11314"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="2869"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#aad400;stroke:none;stroke-width:0.765;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 109.21519,103.92283 c 0,0 0.12028,32.40003 0,43.06062 -0.12028,10.66059 -5.45647,18.31893 -14.914848,18.16244 -9.458375,-0.15649 -16.839347,-7.37099 -16.839347,-18.16244 0,-14.88101 31.754195,-43.06062 31.754195,-43.06062 z"
+       id="path2261"
+       sodipodi:nodetypes="czzcc" />
+    <path
+       id="rect3846"
+       style="fill:#37abc8;stroke:none;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 84.918423,103.56199 h 6.735742 l 23.454805,61.70416 h -6.73574 c -5.38785,-20.89211 -8.893935,-42.03512 -23.454807,-61.70416 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#37abc8;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 111.86137,104.16339 h 21.04919 l -1e-5,19.84637 c 0,-16.97601 -9.57259,-17.32047 -17.6813,-17.32047 h -3.48816 z"
+       id="path5251"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#37abc8;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 111.74109,129.66297 v -3.1273 c 2.71438,0 7.99869,0.35331 7.99869,-8.84066 l -0.12028,21.83101 c 0,-8.54031 -5.22118,-9.86305 -7.87841,-9.86305 z"
+       id="path6551"
+       sodipodi:nodetypes="ccccc" />
+    <circle
+       style="fill:none;fill-opacity:1;stroke:#003380;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path20073"
+       cx="106.3886"
+       cy="131.7679"
+       r="42.639633" />
+  </g>
+</svg>
