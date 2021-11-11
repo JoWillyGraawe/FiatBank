@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="../styles/style.css">
+ <title>FiatBank</title>
+</head>
+<body>
+ <header>
+
+  <div class="logo">
+   <a href="../../homepage.html"><h1 class="title">FiatBank</h1></a>
+  </div>
+
+  <nav class="nav">
+   <ul>
+    <li>
+     <a href="../../homepage.html" class="nav__link nav__text">Home</a>
+    </li>
+    <li class="pre_dropdown">
+     <a href="services.html" class="nav__link nav__text">Services</a>
+     <div class="dropdown">
+       <a href="insurance.html" class="nav__text">Insurance</a>
+       <a href="savings.html" class="nav__text">Savings</a>
+       <a href="loans.html" class="nav__text">Loans</a>
+     </div>
+    </li>
+    <li>
+     <a href="about.html" class="nav__link nav__text">About us</a>
+    </li>
+    <li>
+     <a href="contact.html" class="nav__link nav__text">Contact</a>
+    </li>
+   </ul>
+  </nav>
+
+ </header>
+
+ <main class="main_mar">
+  
+   <div class="l_grid">
+    <div class="l_title_g boxes">
+      <h2 class="sub-title">Loans</h2>
+    </div>
+    <div class="l_title_g boxes">
+      <p></p>
+    </div>
+    <div class="mortgage boxes lo_content">
+      <h2 class="sub-title lo_title">Mortgage</h2>
+      <p class="text">
+        We adapt the mortgage to you and your situation. Whether you are looking for the best interest rate on the market or a predictable repayment schedule. Apply for proof of financing today and you are ready to chase your dream home!
+      </p>
+      <img src="" alt="something">
+      <ul class="text">
+        <li>Nominal rates from 1.29 - 1.99%</li>
+        <li>Maturity between 10- and 30-years</li>
+        <li>Fixed interest rate from 2.50%</li>
+        <li>Borrow the entire real estate with extra security</li>
+      </ul>
+ 
+    </div>
+    <div class="car_loan boxes lo_content">
+     <h2 class="sub-title lo_title">Car Loan</h2>
+     <p class="text">
+      Do you have plans to buy a car? With car-loan from Fiat Bank, you can buy the car you want, and borrow up to 100% of the purchase price. Apply today and you will have the financing certificate in order when the dream car appears.
+     </p>
+     <img src="" alt="something">
+     <ul class="text">
+       <li>Nominal rate from 3.10%</li>
+       <li>Loans up to 100% of the car's value</li>
+       <li>Quick and easy process</li>
+       <li>Best rate at 35% equity</li>
+     </ul>
+    </div>
+    <div class="credit boxes lo_content">
+     <h2 class="sub-title lo_title">Credit Cards</h2>
+     <p class="text">
+      Borrow up to NOK 600,000 for whatever you want! Are you planning some new projects, or do you want to refinance expensive small loans or credit card debt? Apply for a credit card at Fiat bank and we will help you relize your dreams.
+     </p>
+     <img src="" alt="something">
+     <ul class="text">
+       <li>Interest rate from 6.99 - 17.99%</li>
+       <li>Loans from NOK 5000 - 600.000</li>
+       <li class="li_skip">To get a unsecured loan, you have to:</li>
+       <li>Have a registered income</li>
+       <li>Do not have active debt collection cases</li>
+       <li>Be older than 23 year</li>
+     </ul>
+    </div> 
+    <div class="l_calc_top l_title_g boxes_blue">
+      <select name="Loans" class="loans text">
+        <option value="Morgage">Mortgage</option>
+        <option value="Car">Car Loan</option>
+        <option value="Credit">Credit</option>
+      </select>
+      <div class="l_btn text">Pick</div>
+    </div>
+    <div class="l_calc_bottom l_title_g boxes">
+      <div class="morg boxes_lblue">
+        <label for="income" class="text">
+          Annual income before tax:
+          <input type="text" name="income">
+        </label>
+        <label for="equity" class="equity text">
+           Equity:
+          <input type="text" name="equity">
+        </label>
+        <div class="l_btn text">Calculate</div>
+        <label for="Income" class="text">
+          Total amount of loan:
+          <input type="number" disabled>
+        </label>
+      </div>
+      <div class="cred boxes_lblue text">
+        <label for="income">
+          Your annual income before tax:
+          <input type="number" name="income" class="inp_cr">
+        </label>
+        <label for="kids">
+          How many kids do you have?
+          <select name="kids" id="kids" onchange="creditLimit()">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3+</option>
+        </select>
+        </label>
+        <div>Are you married?</div>
+        <label for="married" class="">
+          Yes
+          <input type="radio" name="married">
+          No
+          <input type="radio" name="married">
+        </label>
+        <label for="card_limit">
+          Your credit card limit is:
+          <input type="number" name="card_limit" class="inp_cr" disabled>
+        </label>
+      </div>
+      <div class="car">
+        <label for="">
+          Repayment period
+          <select id="car_maturity" onchange="carLoan();">
+            <option value="10years">10 years</option>
+            <option value="5years">5 years</option>
+            <option value="3years">3 years</option>
+        </select>
+        </label>
+        <label for="">
+          Loan-to-value ratio
+          <select id="car_leverage" onchange="carLoan();">
+            <option value="100pro">100%</option>
+            <option value="75pro">75%</option>
+            <option value="50pro">50%</option>
+        </select>
+        </label>
+        <label for="">
+          Nominal rate:
+          <input type="text">
+        </label>
+      </div>
+    </div>
+   </div>
+ </main>
+
+ <footer class="footer">
+  <p>filler</p>
+ </footer>
+
+ <script>
+   let temp, loan_type, btn, display_1, display_2;
+   loan_type = document.querySelector(".loans");
+   btn = document.querySelector(".l_btn");
+   display_2 = document.querySelector(".l_calc_bottom");
+   let dips1,disp2,disp3;
+    disp1 = document.querySelector('.morg');   
+    disp2 = document.querySelector(".car");  
+    disp3 = document.querySelector(".cred");
+
+   btn.addEventListener("click", function() {
+    if (loan_type.value == "Morgage") {
+      display_1 = document.querySelector(".morg");
+      display_2.classList.add("loan_active");
+      display_1.classList.add("loan_choice");
+    } else if (loan_type.value == "Car") {
+      display_1 = document.querySelector(".car");
+      display_2.classList.add("loan_active");
+      display_1.classList.add("loan_choice");
+    } else if (loan_type.value == "Credit") {
+      display_1 = document.querySelector(".cred");
+      display_2.classList.add("loan_active");
+      display_1.classList.add("loan_choice");
+    }
+  })
+
+  loan_type.addEventListener('change', function () {
+    disp1.classList.remove("loan_choice");
+    disp2.classList.remove("loan_choice");
+    disp3.classList.remove("loan_choice");
+    display_2.classList.remove("loan_active");
+  }) 
+
+   function mortgage() {
+    var x = Math.round(document.getElementById("income").value * 5);
+       var y = Math.round(document.getElementById("equity").value * (85/15));
+       if (x > y){
+           document.getElementById("total").value = y;
+       }
+       else{
+           document.getElementById("total").value = x;
+       }
+   } 
+
+   function carLoan(){
+        var maturity = document.getElementById("car_maturity").value;
+        var leverage = document.getElementById("car_leverage").value;
+        var rates = ['3%','4%','5%'];
+        
+        if ((maturity == "3years" && leverage == "50pro") || (maturity == "5years" && leverage == "50pro") || (maturity == "3years" && leverage == "75pro")) {
+            document.getElementById("carLoanRate").value = rates[0];
+        }
+        else if ((maturity == "3years" && leverage == "100pro") || (maturity == "5years" && leverage == "50pro") || (maturity == "5years" && leverage == "75pro")) {
+            document.getElementById("carLoanRate").value = rates[1];
+        }
+        else{
+            document.getElementById("carLoanRate").value = rates[2];
+        }
+    }
+
+
+    function creditLimit(){
+            var inc = document.getElementById("annualIncome").value;
+            var kid = document.getElementById("kids").value;
+            var married = document.getElementById("married").value;
+            var limit = inc/10;
+
+            limit -=  (kid*10000)
+            if (married == "yes"){
+                limit -= 5000
+            }
+
+            document.getElementById("creditLimit").value = limit;
+        }
+    
+    
+ </script>
+ 
+</body>
+</html>
