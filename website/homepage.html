@@ -29,10 +29,11 @@
    <div class="box_2 boxes">
     <h2 class="sub-title">News</h2>
     <div class="text" id="feed_container">
-       <div id="feed_title"></div>
-       <div id="feed_item">Loading...</div>
+       <!-- We tried initially to create an RSS/XML parser from scratch, but quickly ran into dreaded CORS errors, so we ended up going for an external solution. Hence, we don't consider the news feed as part of either fulfilling the project requirements, nor eligible for affecting the grading.  -->
+       <div id="feed_item">
+          <script src="//rss.bloople.net/?url=https%3A%2F%2Findependentbanker.org%2Ffeed%2F&detail=25&limit=1&type=js"></script>
+         </div>
     </div>
-    <a href="#">Read more here</a>
    </div>
    <div class="box_3 boxes">
     <h2 class="sub-title">About us</h2>
@@ -48,6 +49,5 @@ isus. Nunc fringilla accumsan sem, in finibus dui pretium eget. Proin nec volutp
   <input type="checkbox" name="chatbot">
  </main>
  <footer class="footer"></footer>
- <script src="/website/script/news_feed.js"></script>
 </body>
 </html>
