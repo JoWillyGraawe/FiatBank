@@ -71,7 +71,7 @@
       <div class="top_chat">
         <i class='bx bxs-message-rounded'></i>
         <div class="top_text">
-          <h5>Chat med oss</h5>
+          <h5>Chat with us</h5>
           <div class="avslutt">
             <i class='bx bx-x'></i>
           </div>
@@ -79,8 +79,8 @@
       </div>
       <div class="chat_cnt"></div>
       <div class="chat_inp">
-        <textarea name="name" rows="3" cols="30" placeholder="Type in here..." autofocus></textarea>
-        <div class="send">
+        <input id="chat_inputfield" name="name" placeholder="Type in here..." autofocus></input>
+        <div class="send" onclick="chatButtonSend()">
           <i class='bx bx-send'></i>
         </div>
       </div>
@@ -93,21 +93,6 @@
   <p>filler</p>
  </footer>
 
- <script type="text/javascript">
- //Code Chatbot
-  let chat_knapp = document.querySelector(".chat_unclicked")
-  let toggle_chat = document.querySelector(".chat_clicked")
-  let toggle_chat_off = document.querySelector(".avslutt")
-
-  chat_knapp.addEventListener("click", function() {
-    toggle_chat.classList.toggle("active")
-    chat_knapp.classList.toggle("inactive")
-  })
-
-  toggle_chat_off.addEventListener("click", function() {
-    toggle_chat.classList.toggle("active")
-    chat_knapp.classList.toggle("inactive")
-  })
- </script>
+ <script src="/website/script/chat_bot.js"></script>
 </body>
 </html>
